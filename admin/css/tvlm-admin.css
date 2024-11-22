@@ -1,0 +1,233 @@
+/* General Admin Styles */
+.tvlm-wrap {
+    margin: 20px 0;
+}
+
+/* Controls Section */
+.tvlm-staging-controls {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tvlm-staging-controls select {
+    min-width: 200px;
+}
+
+.tvlm-status-filter {
+    display: flex;
+    gap: 15px;
+}
+
+/* Table Styles */
+.tvlm-staging-items {
+    margin-top: 20px;
+}
+
+.tvlm-staging-items .column-actions {
+    width: 200px;
+}
+
+.tvlm-status {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.tvlm-status-pending {
+    background: #fff6e5;
+    color: #f0b849;
+}
+
+.tvlm-status-in_progress {
+    background: #e5f5fa;
+    color: #007cba;
+}
+
+.tvlm-status-completed {
+    background: #e8f5e9;
+    color: #46b450;
+}
+
+.tvlm-status-synced {
+    background: #f0f0f1;
+    color: #646970;
+}
+
+/* Edit Dialog */
+#tvlm-edit-dialog {
+    padding: 20px;
+}
+
+.tvlm-edit-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.tvlm-edit-form input[type="text"],
+.tvlm-edit-form select {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Loading State */
+.tvlm-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.tvlm-loading .spinner {
+    float: none;
+    margin: 0 10px 0 0;
+}
+
+/* Error State */
+.tvlm-error {
+    color: #d63638;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Dashboard Grid */
+.tvlm-dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Card Styles */
+.tvlm-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.tvlm-card-header {
+    border-bottom: 1px solid #ccd0d4;
+    padding: 12px 15px;
+}
+
+.tvlm-card-header h2 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.tvlm-card-content {
+    padding: 15px;
+}
+/* Dashboard specific styles */
+.tvlm-margin-top {
+    margin-top: 15px;
+}
+
+.tvlm-untranslated-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.tvlm-no-items {
+    text-align: center;
+    color: #646970;
+    font-style: italic;
+}
+
+.tvlm-activity-meta .tvlm-status {
+    font-size: 11px;
+    padding: 2px 6px;
+    margin-right: 5px;
+}
+
+/* Status colors - if not already defined */
+.tvlm-status-pending { background: #fff6e5; color: #f0b849; }
+.tvlm-status-in_progress { background: #e5f5fa; color: #007cba; }
+.tvlm-status-completed { background: #e8f5e9; color: #46b450; }
+.tvlm-status-synced { background: #f0f0f1; color: #646970; }
+
+.tvlm-progress {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.tvlm-progress-bar {
+    height: 20px;
+    background-color: #0073aa;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.tvlm-progress-status {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+#tvlm-bulk-translate-dialog select {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.tvlm-full-width {
+    grid-column: 1 / -1;
+}
+
+.tvlm-pages-list {
+    margin-top: 15px;
+}
+
+.tvlm-translation-statuses {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.tvlm-lang-status {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.tvlm-status-not-started {
+    background: #f0f0f1;
+    color: #646970;
+}
+
+.column-languages {
+    width: 200px;
+}
+
+.column-status {
+    width: 100px;
+}
+
+.column-modified {
+    width: 150px;
+}
+
+.column-actions {
+    width: 100px;
+    text-align: right;
+}
+
+/* Status colors */
+.tvlm-lang-status.tvlm-status-pending { background: #fff6e5; color: #f0b849; }
+.tvlm-lang-status.tvlm-status-in_progress { background: #e5f5fa; color: #007cba; }
+.tvlm-lang-status.tvlm-status-completed { background: #e8f5e9; color: #46b450; }
+.tvlm-lang-status.tvlm-status-synced { background: #f0f0f1; color: #646970; }
